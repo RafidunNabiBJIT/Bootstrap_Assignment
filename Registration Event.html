@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tech Conference Registration</title>
+  <!-- Link Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <!-- Link your custom CSS (for color scheme, if needed) -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Header section -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+      <!-- Logo on the left -->
+      <a class="navbar-brand" href="#">
+        <img src="Tech_Icon.png" alt="Logo" width="30" height="30" class="d-inline-block align-top">
+        BJIT Tech Conference
+      </a>
+      
+      <!-- Navbar links -->
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Sessions</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Registration</a>
+          </li>
+          <!-- Add more navigation links -->
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <header class="text-white text-center py-5" style="background-color: #39b7cd">
+    <h2>Welcome to the Tech Conference</h2>
+    <p class="lead">Dive into the world of innovation! Join us for an exhilarating journey 
+      into the future of technology at BJIT's much-anticipated event.</p>
+  </header>
+  
+  <!-- Table -->
+  <div class="container mt-5">
+    <div class="row justify-content-center">
+      <div class="col-md-8 text-center">
+    <h2 style="color: #39b7cd;">Sessions Schedule</h2>
+    <div class="table-responsive mt-4">
+      <table class="table table-sessions table-bordered">
+        <thead style="background-color: #39b7cd">
+          <tr class="text-white" >
+            <th class="text-white">Session Name</th>
+            <th class="text-white">Speaker</th>
+            <th class="text-white">Date</th>
+            <th class="text-white">Time</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr data-toggle="modal" data-target="#sessionModal1">
+            <td class="session-link">Challenges of AI</td>
+            <td>Dr. Sarah Smith</td>
+            <td>2023-08-20</td>
+            <td>10:00 AM</td>
+          </tr>
+          <tr data-toggle="modal" data-target="#sessionModal2">
+            <td class="session-link">Web Development Trends</td>
+            <td>Dr. Azizul Haque</td>
+            <td>2023-09-21</td>
+            <td>10:00 AM</td>
+          </tr>
+          <tr data-toggle="modal" data-target="#sessionModal3">
+            <td class="session-link">Cloud Computing</td>
+            <td>Dr. Rabindranath Tagore</td>
+            <td>2023-09-21</td>
+            <td>10:55 AM</td>
+          </tr>
+          <!-- Add more session rows -->
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+  
+  <!-- Modals for session details -->
+  <div class="modal fade" id="sessionModal1" tabindex="-1" role="dialog" aria-labelledby="sessionModalLabel1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="sessionModalLabel1">Challenges of AI</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <p><strong>Speaker:</strong> Dr. Sarah Smith</p>
+          <p><strong>Date:</strong> 2023-08-20</p>
+          <p><strong>Time:</strong> 10:00 AM</p>
+          <p>This session will explore the various applications and challenges of artificial intelligence in today's world.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary" data-dismiss="modal" onclick="alert('Thank you for registering!')">Register</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="sessionModal2" tabindex="-1" role="dialog" aria-labelledby="sessionModalLabel2" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="sessionModalLabel2">Web Development Trends</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <p><strong>Speaker:</strong> Dr. Azizul Haque</p>
+          <p><strong>Date:</strong> 2023-08-20</p>
+          <p><strong>Time:</strong> 10:00 AM</p>
+          <p>This session will explore the various applications and challenges of web development in today's world.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary" data-dismiss="modal" onclick="alert('Thank you for registering!')">Register</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="sessionModal3" tabindex="-1" role="dialog" aria-labelledby="sessionModalLabel3" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="sessionModalLabel3">Cloud Computing</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <p><strong>Speaker:</strong> Dr. Rabindranath Tagore</p>
+          <p><strong>Date:</strong> 2023-08-21</p>
+          <p><strong>Time:</strong> 10:55 AM</p>
+          <p>This session will explore the various applications and challenges of cloud computing in today's world.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary" data-dismiss="modal" onclick="alert('Thank you for registering!')">Register</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+<div class="container mt-5">
+  <h2 style="color: #39b7cd;" class="text-center">Registration Form</h2>
+  <div class="row justify-content-center">
+    <div class="col-md-8">
+    <form id="registration-form">
+      <!-- Attendee information -->
+      <div class="form-group">
+        <label for="name" class="text-secondary">Name</label>
+        <input type="text" class="form-control" id="name" name="name" required>
+      </div>
+      <div class="form-group">
+        <label for="email" class="text-secondary">Email</label>
+        <input type="email" class="form-control" id="email" name="email" required>
+      </div>
+      <div class="form-group">
+        <label for="organization" class="text-secondary">Organization</label>
+        <input type="text" class="form-control" id="organization" name="organization" required>
+      </div>
+      
+      <!-- Preferred sessions -->
+      <div class="form-group">
+        <label for="preferred-sessions" class="text-secondary">Preferred Sessions</label>
+        <select class="form-control" id="preferred-sessions" name="preferred-sessions">
+          <option value="session1">Challenges of AI</option>
+          <option value="session2">Web Development Trends</option>
+          <option value="session3">Cloud ComputingFuture of IT</option>
+          <option value="session3">Future of IT</option>
+      
+        </select>
+      </div>
+      
+      <button type="submit" class="btn" style="background-color: #39b7cd; color: #FFFFFF;" onclick="alert('Thank you for registering!')">Submit</button>
+    </form>
+    </div>
+    </div>
+  </div>
+  </div>
+	
+  <!--Footer -->
+  <footer class="bg-dark text-white py-5 mt-4">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4">
+          <h5>Event Details</h5>
+          <p>Date: August 20-22, 2023</p>
+          <p>Location: Tech Center, City</p>
+        </div>
+        <div class="col-md-4">
+          <h5>Contact Information</h5>
+          <p>Email: bjit@academy.com</p>
+          <p>Phone: +1 (123) 456-7890</p>
+        </div>
+        <div class="col-md-4">
+          <h5>Follow Us</h5>
+          <ul class="list-unstyled">
+            <li><a href="#" class="text-white">Facebook</a></li>
+            <li><a href="#" class="text-white">Twitter</a></li>
+            <li><a href="#" class="text-white">Instagram</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+  
+  <!-- Link Bootstrap JS and your custom JS (if needed) -->
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <!-- Link your custom JS file -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
